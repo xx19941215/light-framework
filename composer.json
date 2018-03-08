@@ -1,5 +1,6 @@
 {
     "name": "xx19941215/light-framework",
+    "license": "MIT",
     "config": {
         "vendor-dir": "vendor",
         "secure-http": false
