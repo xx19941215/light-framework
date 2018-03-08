@@ -1,5 +1,5 @@
 {
-    "name": "light-framework",
+    "name": "xiao/light-framework",
     "config": {
         "vendor-dir": "vendor",
         "secure-http": false
