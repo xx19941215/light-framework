@@ -29,7 +29,7 @@
         "psr-4": {
         },
         "files": [
-            "light/src/Support/functions.php"
+            "src/Support/functions.php"
         ]
     }
 }
