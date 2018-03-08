@@ -1,5 +1,5 @@
 {
-    "name": "Light Framework",
+    "name": "light-framework",
     "config": {
         "vendor-dir": "vendor",
         "secure-http": false
