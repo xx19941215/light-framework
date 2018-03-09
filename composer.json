@@ -27,7 +27,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Light\\": "src",
+            "Light\\": "src"
         },
         "files": [
             "src/Support/functions.php"
