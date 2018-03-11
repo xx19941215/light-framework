@@ -20,6 +20,15 @@ function obj($obj)
     return $obj;
 }
 
+function micro_date($time = null): string
+{
+    if (!$time) {
+        $time = microtime(true);
+    }
+    $date = date_create_from_format('U.u', $time);
+    return $date->format('Y-m-d\TH:i:s.u');
+}
+
 function app($make = null)
 {
     if (is_null($make)) {

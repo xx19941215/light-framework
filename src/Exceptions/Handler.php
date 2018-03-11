@@ -7,6 +7,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Debug\ExceptionHandler as SymfonyExceptionHandler;
 use Symfony\Component\Debug\Exception\FlattenException;
 use Whoops\Run;
+use Symfony\Component\Console\Application as ConsoleApplication;
 
 class Handler implements ExceptionHandler
 {
@@ -41,6 +42,7 @@ class Handler implements ExceptionHandler
     public function renderForConsole($output, \Exception $e)
     {
         // todo
+        (new ConsoleApplication)->renderException($e, $output);
     }
 
     public function render($request, \Exception $e): Response

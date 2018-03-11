@@ -2,6 +2,8 @@
 
 namespace Light\Container;
 
+use Chat\Startup\Index\Service\CreateMsgService;
+
 class Container implements \ArrayAccess
 {
     public $bindings = [];
@@ -64,6 +66,7 @@ class Container implements \ArrayAccess
         if ($concrete instanceof \Closure) {
             return $concrete($this, $parameters);
         }
+
 
         $reflector = new \ReflectionClass($concrete);
         if (!$reflector->isInstantiable()) {

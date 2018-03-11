@@ -30,7 +30,7 @@
             "Light\\": "src"
         },
         "files": [
-            "src/Support/functions.php"
+//            "src/Support/functions.php"
         ]
     }
 }
