@@ -1,6 +1,6 @@
 <?php
 use Light\Support\Str;
-use Light\Database\DateSet;
+use Light\Database\DataSet;
 
 function var2file($targetPath, $var)
 {
@@ -115,5 +115,5 @@ function toSfRequest($swRequest)
 
 function collect(\Light\Database\SqlBuilder\Mysql\SelectSqlBuilder $ssb, $modelClass)
 {
-    return new DateSet($ssb, $modelClass);
+    return new DataSet($ssb, $modelClass);
 }

@@ -3,7 +3,7 @@ namespace Light\Contract\Repo;
 
 use Light\Contract\Database\SqlBuilder\SelectSqlBuilderInterface;
 use Light\Database\DatabaseManager;
-use Light\Database\DateSet;
+use Light\Database\DataSet;
 
 abstract class RepoBase
 {
@@ -31,8 +31,8 @@ abstract class RepoBase
     {
     }
 
-    protected function dataSet(SelectSqlBuilderInterface $ssb, $modelClass) : DateSet
+    protected function dataSet(SelectSqlBuilderInterface $ssb, $modelClass) : DataSet
     {
-        return new DateSet($ssb, $modelClass);
+        return new DataSet($ssb, $modelClass);
     }
 }

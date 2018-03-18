@@ -4,7 +4,7 @@ namespace Light\Database;
 use Light\Contract\Database\SqlBuilder\SelectSqlBuilderInterface;
 use Light\Database\Exception\DatabaseException;
 
-class DateSet implements \JsonSerializable
+class DataSet implements \JsonSerializable
 {
     protected $ssb;
     protected $modelClass;
