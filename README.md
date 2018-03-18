@@ -466,10 +466,15 @@ CREATE TABLE `meta` (
 ```
 
 8.Open the browser and visit http://www.light-project.test/
+
 # TODO
 
-- Console Application
 - Database Migration
-- A Instant Message Application based on Light and Workman
 - Security
 - Session
+
+# DONE
+
+- 1.1.3
+    - Console Application
+
